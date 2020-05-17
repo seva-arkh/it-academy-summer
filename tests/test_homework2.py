@@ -20,7 +20,7 @@ class TestHomework2(unittest.TestCase):
     )
     @ddt.unpack
     def test_task1(self, m, n, s, expected):
-        """Roubles: {}, kopecks: {}, number: {}"""
+        """Task1. Roubles: {}, kopecks: {}, number: {}"""
         self.assertEqual(total_sum(m, n, s), expected)
 
 
