@@ -13,8 +13,13 @@ def sub_string(str_):
     :return: строка. Получившееся выражение
     """
 
-    # write your code here
-    return ''  # write return value here
+    rep = ' '
+    new_string=''
+    for el in str_:
+        if el not in rep:
+            rep += el
+            new_string += el
+    return new_string  # write return value here
 
 
 if __name__ == '__main__':

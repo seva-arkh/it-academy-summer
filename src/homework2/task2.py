@@ -13,8 +13,20 @@ def longest_word(str_):
         в случае если
     """
 
-    # write your code here
-    return ''  # write return value here
+    punctuation = ',.;\|/?><()!@'
+    new_string=''
+    for el in str_:
+        if el not in punctuation:
+            new_string += el
+
+    list = new_string.split(" ")
+    max_len = 0
+    word = ''
+    for el in list:
+        if len(el)>max_len:
+            word=el
+            max_len=len(el)
+    return word  # write return value here
 
 
 if __name__ == '__main__':

@@ -12,8 +12,18 @@ def palindrom(n):
     :return: Bool. True или False. Является ли число палиндромом.
     """
 
-    # write your code here
-    return ''  # write return value here
+    x = n
+    n_reverse = 0
+    while n:
+        mod = n%10
+        n_reverse = n_reverse * 10 + mod
+        n //= 10
+    if n_reverse == x:
+        b = True
+    else:
+        b = False
+
+    return b  # write return value here
 
 
 if __name__ == '__main__':
