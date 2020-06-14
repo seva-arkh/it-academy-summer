@@ -18,7 +18,6 @@ def total_sum(m, n, s):
     m *= int(s)
     n = m % 100
     m //= 100
-
     return '{} rubles {} kopecks'.format(m,n)  # write return value here
 
 
