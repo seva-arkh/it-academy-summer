@@ -10,13 +10,13 @@ def fibonacci(n):
     :return: Число. n-ое число Фибоначчи
     """
 
-    v_2 = 1
+    fib_2 = 1
     for el in range(n):
         if not el:
-            v_1=0
+            fib_1=0
             continue
-        v_2, v_1 = v_2 + v_1, v_2
-    return v_2  # write return value here
+        fib_2, fib_1 = fib_2 + fib_1, fib_2
+    return fib_2  # write return value here
 
 
 if __name__ == '__main__':

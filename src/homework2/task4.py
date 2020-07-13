@@ -15,9 +15,9 @@ def count_letters(str_):
     low_number = 0
     up_number = 0
     for el in str_:
-        if 64<ord(el)<91:
+        if 'A'<=el<='Z':
             up_number += 1
-        elif 96<ord(el)<123:
+        elif 'a'<=el<='z':
             low_number += 1
     return (low_number, up_number)  # write return value here
 

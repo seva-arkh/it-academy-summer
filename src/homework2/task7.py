@@ -5,7 +5,8 @@ import re
 import sys
 
 # You are given an unordered array consisting of consecutive integers
-#[1, 2, 3, ..., n] without any duplicates. You are allowed to swap any two elements.
+#[1, 2, 3, ..., n] without any duplicates. You are allowed to swap any
+#two elements.
 #You need to find the minimum number of swaps required to sort the array
 #in ascending order.
 def minimumSwaps(arr):
@@ -38,12 +39,15 @@ if __name__ == '__main__':
     fptr.close()
 
 
-#Gary is an avid hiker. He tracks his hikes meticulously, paying close attention
-#to small details like topography. During his last hike he took exactly  steps.
-#For every step he took, he noted if it was an uphill, U, or a downhill, D step.
+#Gary is an avid hiker. He tracks his hikes meticulously, paying close
+#attention
+#to small details like topography. During his last hike he took exactly steps.
+#For every step he took, he noted if it was an uphill, U, or a downhill,
+#D step.
 #Gary's hikes start and end at sea level and each step up or down represents a
 #unit change in altitude. We define the following terms:
-#A mountain is a sequence of consecutive steps above sea level, starting with a
+#A mountain is a sequence of consecutive steps above sea level, starting
+#with a
 #step up from sea level and ending with a step down to sea level.
 #A valley is a sequence of consecutive steps below sea level, starting with a
 #step down from sea level and ending with a step up to sea level.
@@ -74,12 +78,15 @@ if __name__ == '__main__':
     fptr.close()
 
 
-#Alice and Bob each created one problem for HackerRank. A reviewer rates the two
+#Alice and Bob each created one problem for HackerRank. A reviewer rates
+#the two
 #challenges, awarding points on a scale from 1 to 100 for three categories:
 #problem clarity, originality, and difficulty.
-#We define the rating for Alice's challenge to be the triplet a=(a[0],a[1],a[2]),
+#We define the rating for Alice's challenge to be the triplet
+#a=(a[0],a[1],a[2]),
 #and the rating for Bob's challenge to be the triplet b=(b[0],b[1],b[2]).
-#Your task is to find their comparison points by comparing a[0] with b[0], a[1]
+#Your task is to find their comparison points by comparing a[0]
+#with b[0], a[1]
 #with b[1], a[2] and  with b[2].
 #If a[i]>b[i], then Alice is awarded  point.
 #If a[i]<b[i], then Bob is awarded  point.
@@ -129,15 +136,18 @@ if __name__ == '__main__':
 # (positive or negative).
 #
 # Note: the jnz instruction moves relative to itself. For example, an offset of
-# -1 would continue at the previous instruction, while an offset of 2 would skip
+# -1 would continue at the previous instruction, while an offset of 2 would
+#skip
 # over the next instruction.
 #
 # The function will take an input list with the sequence of the program
 # instructions and will execute them. The program ends when there are no more
-# instructions to execute, then it returns a dictionary with the contents of the
+# instructions to execute, then it returns a dictionary with the contents of
+#the
 # registers.
 #
-# Also, every inc/dec/jnz on a register will always be preceeded by a mov on the
+# Also, every inc/dec/jnz on a register will always be preceeded by a mov on
+#the
 # register first, so you don't need to worry about uninitialized registers.
 
 

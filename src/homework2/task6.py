@@ -12,13 +12,10 @@ def palindrom(n):
     :return: Bool. True или False. Является ли число палиндромом.
     """
 
-    x = n
-    n_reverse = 0
-    while n:
-        mod = n%10
-        n_reverse = n_reverse * 10 + mod
-        n //= 10
-    if n_reverse == x:
+    first_part = n//10**(int((len(str(n))+1)/2))
+    second_part = n%10**(int(len(str(n))/2))
+
+    if str(first_part) == str(second_part)[::-1]:
         b = True
     else:
         b = False
